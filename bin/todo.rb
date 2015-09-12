@@ -3,24 +3,16 @@ require_relative '../lib/all'
 
 class Todo
 
-  # def initialize
-  #   @todo = []
-  # end
-
   def run_todo
     puts "What task would you like to add to your Todo app?"
-    task = gets.chomp
-    add_todo(task)
-    "You just added as a task: #{task}"
+    tasks = gets.chomp
+    add_todo(tasks)
+    puts "You just added as a task: #{tasks}"
   end
 
-  def add_todo(task)
-    task
+  def add_todo(tasks)
+    Todo.new(task: tasks).save
   end
-
 end
 
-# run = Todo.new
-# run.run_todo
-
-
+Todo.new.run_todo

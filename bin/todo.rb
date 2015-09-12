@@ -3,8 +3,8 @@ require_relative '../lib/all'
 
 class Todo
 
-  def add_todo
-    "Go to sleep"
+  def add_todo(task)
+    task
   end
 
 end

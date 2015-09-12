@@ -9,5 +9,9 @@ class TodoTest < Minitest::Test
     assert(Todo)
   end
 
+  def test_todo_exists
+    td = Todo.new
+    assert_equal("Go to sleep", td.add_todo)
+  end
 
 end

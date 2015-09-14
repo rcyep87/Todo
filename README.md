@@ -3,6 +3,7 @@ This is a Todo program that allows you to create todo's! It saves any updates yo
 To run this todo program:
 * run 'bundle install'
 * ruby bin/todo.rb'
+* Follow user prompt to add a new task to your todo app.
 
 .
 ├── Gemfile             # Details which gems are required by the project
